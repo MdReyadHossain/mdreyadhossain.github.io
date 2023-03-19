@@ -1,0 +1,970 @@
+/* https://fonts.google.com/share?selection.family=Alegreya%7CMulish:wght@700%7CRajdhani:wght@500%7CUrbanist:wght@200;400%7CWork%20Sans:wght@500 */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Mulish:wght@700&family=Rajdhani:wght@500&family=Urbanist:wght@200;400&family=Work+Sans:wght@500&display=swap');
+
+/* 
+
+font-family: 'Alegreya', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Work Sans', sans-serif; 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll {
+    margin: 5px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    display: block;
+}
+
+a#scroll-up {
+    height: 2em;
+    width: 2em;
+    margin: 5px;
+    background-color: #2b6777;
+    border-radius: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a#scroll-up:hover {
+    background-color: #78acbb;
+}
+
+#scroll-up > div {
+    width: 0; 
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #fffbf0;
+    border-radius: 30%;
+}
+
+a#scroll-down {
+    height: 2em;
+    width: 2em;
+    margin: 5px;
+    background-color: #2b6777;
+    border-radius: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a#scroll-down:hover {
+    background-color: #78acbb;
+}
+
+#scroll-down > div {
+    width: 0; 
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #fffbf0;
+    border-radius: 30%;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/reyad_widescrn.jpg);
+    position: fixed;
+    z-index: -2;
+}
+
+.sidebar {
+    animation: sidebar;
+    animation-duration: 4s;
+    width: 5%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.3);
+
+    position: fixed;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar > div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.sidebar > div > a > i {
+    font-size: 30px;
+    text-decoration: none;
+    color: #2b6777;
+}
+
+.sidebar > div > a > i:hover {
+    color: #78acbb;
+}
+
+.sidebar:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+@keyframes sidebar {
+    from {
+        right: -100px;
+    }
+}
+
+#welcome {
+    /* position: relative; */
+    /* height: 100vh; */
+    /* display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center; */
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);   
+    animation: itsme;
+    animation-duration: 4s;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 10px;
+}
+
+.header > a {
+    height: auto;
+    width: 70px;
+    padding: 5px 0px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.header > a:hover {
+    background-color: #ffffff;
+    color: #404040;
+}
+
+.itsme {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);   
+    animation: itsme;
+    animation-duration: 4s; */
+}
+
+@keyframes itsme {
+    from {
+        background-color: rgb(0, 0, 0, 0);
+        opacity: 0;
+    }
+}
+
+#academic {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffff;
+}
+
+#academic > .journey {
+    width: 80%;
+    background-color: #ffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2.1em;
+    padding: 50px 0 20px 0;
+    color: #222;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.des-academic {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+.journey > .institute {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aiub {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2em 0;
+}
+
+.ahc {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2em 0;
+}
+
+.ymca {
+    display: grid;
+    grid-template-columns: auto auto;    
+    padding: 2em 0;
+}
+
+.wall {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.wall > img {
+    width: 15em;
+    border-radius: 10%;
+}
+
+.content > h3 > a {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #2b6777;
+}
+
+.content > h3 > a:hover {
+    color: #009999;
+}
+
+.content > span {
+    margin-bottom: 20px;
+    color: #52ab98;
+}
+
+.content > p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    color: #404040;
+}
+
+.content > p > a {
+    font-family: Perpetua;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b6777;
+}
+
+.content > b {
+    font-family: Trebuchet Ms;
+    padding: 20px 0;
+}
+
+#profession {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/profession.jpg);
+    /* background-color:#2b6777; */
+    background-size: cover;
+    background-position: center;
+}
+
+.skills {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    /* background-color: #2b6777; */
+}
+
+#profession > h2 {    
+    color: #ffffff;
+}
+
+.skills > .code-skills > h3 {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.skills > .software-skills > h3 {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.code-skills > span {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+.software-skills > span {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: #c8d8e4;
+    border-radius: 3px;
+}
+
+/* skills design start */
+
+#html5 {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#html5::after {
+    content: '80%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+} 
+
+#html5::-webkit-meter-optimum-value {
+    background-color: #ff3300;
+}
+
+#html5::-webkit-meter-optimum-value:hover {
+    background-color: #944e3c;
+}
+
+#css3 {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#css3::after {
+    content: '60%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#css3::-webkit-meter-optimum-value {
+    background-color: #0066ff;
+}
+
+#css3::-webkit-meter-optimum-value:hover {
+    background-color: #7aa0da;
+}
+
+#js {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#js::after {
+    content: '55%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#js::-webkit-meter-optimum-value {
+    background-color: #ffff00;
+}
+
+#js::-webkit-meter-optimum-value:hover {
+    background-color: #888830;
+}
+
+#php {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#php::after {
+    content: '70%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#php::-webkit-meter-optimum-value {
+    background-color: #2952a3;
+}
+
+#php::-webkit-meter-optimum-value:hover {
+    background-color: #80a3eb;
+}
+
+#cpp {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#cpp::after {
+    content: '85%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#cpp::-webkit-meter-optimum-value {
+    background-color: #0066ff;
+}
+
+#cpp::-webkit-meter-optimum-value:hover {
+    background-color: #94bfff;
+}
+
+
+#vsc {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#vsc::after {
+    content: '80%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#vsc::-webkit-meter-optimum-value {
+    background-color: #0066ff;
+}
+
+#vsc::-webkit-meter-optimum-value:hover {
+    background-color: #8cbaff;
+}
+
+#cpt {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#cpt::after {
+    content: '70%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#cpt::-webkit-meter-optimum-value {
+    background-color: #ffff00;
+}
+
+#cpt::-webkit-meter-optimum-value:hover {
+    background-color: #868623;
+}
+
+#cad {
+    height: 2em;
+    width: 80%; 
+    position: relative;  
+}
+
+#cad::after {
+    content: '50%';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    font-family: Oswald;
+    color: #f2f2f2;
+}
+
+#cad::-webkit-meter-optimum-value {
+    background-color: #cc0000;
+}
+
+#cad::-webkit-meter-optimum-value:hover {
+    background-color: #fa7575;
+}
+
+/* skills design end */
+
+#liketodo {
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #ffff;
+}
+
+#liketodo > p {
+    padding: 0 10px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.interest {
+    height: auto;
+    padding: 30px 60px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;    
+}
+
+.interest > div {
+    width: 40vw;
+    height: 50vh;
+    border: 1px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+.interest > div > p {
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);   
+}
+
+.interest > div > p:hover {
+    color: rgb(0, 0, 0);   
+}
+
+.interest > div > div {
+    text-align: center;
+    background-color: rgb(36, 35, 35, 0.5);
+}
+
+.interest > div > div > span {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.8em;
+    padding: 20px 0 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+.music {
+    background-image: url(../img/music.jpg);
+}
+
+.video-games {
+    background-image: url(../img/video-games.jpg);
+}
+
+.movie-series {
+    background-image: url(../img/movies.jpg);
+}
+
+.travel-tour {
+    background-image: url(../img/tour.jpg);
+}
+
+#quotes {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background-image: url(../img/quotes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.deep-inside > h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 50px #404040;
+    margin-bottom: 40px;
+}
+
+.deep-inside > p {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 2px 2px 8px #404040;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.lines {
+    height: auto;
+    width: fit-content;
+    /* background-color: #78acbb; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lines > a {
+    padding: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #404040;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+
+.lines > a:hover {
+    color: #009999;
+}
+
+#information {
+    min-height: 100vh;
+    width: 100%;
+    /* padding-top: 40px; */
+    background-color: #ffffff;
+}
+
+.info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    /* background-color: #05d9ff; */
+}
+
+.get-in-touch {
+    width: 40vw;
+}
+
+.get-in-touch {
+    margin-left: 40px;
+}
+
+.get-in-touch > span {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #2b6777;
+}
+
+.get-in-touch > hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #333, #ccc, rgb(255, 255, 255));
+}
+
+.get-in-touch > a {
+    font-family: 'Urbanist', sans-serif;
+    color: #404040;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.get-in-touch > a:hover {
+    color: #05d9ff;
+}
+
+.get-in-touch > form > input {
+    width: 80%;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px solid #2b6777;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    background-color: #e0fcff;
+}
+
+.get-in-touch > form > textarea {
+    height: 30vh;
+    width: 80%;
+    margin: 0px 10px;
+    border: 1px solid #2b6777;
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    background-color: #e0fcff;
+}
+
+.get-in-touch > form > #submit {
+    height: 5vh;
+    width: 70px;
+    color: #222;
+    background-color: #ffffff;
+    border: 2px solid #2b6777;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.get-in-touch > form > #submit:hover {
+    background-color: #2b6777;
+    color: #ffffff;
+}
+
+.get-in-touch > #resume > button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b6777;
+    color: #ffffff;
+    display: none;
+}
+
+.get-in-touch > #resume > button:hover {
+    background-color: #3997b1;
+}
+
+.get-in-touch > form > span {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.get-in-touch > form > #msg {
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    color: rgb(67, 214, 67);
+}
+
+.map {
+    width: 40vw;
+    /* background-color: #05d9ff; */
+}
+
+.map > iframe {
+    width: 80%;
+    height: 80%;
+    border: 0;
+    margin: 0 40px;
+    margin-top: 10%;
+    border: solid;
+}
+
+.map > a > button {
+    margin: 20px 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b6777;
+    color: #ffffff;
+}
+
+.map > a > button:hover {
+    background-color: #3997b1;
+}
+
+#footer {
+    width: 100%;
+    background-color: #2b6777;
+}
+
+.about {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    text-align: center;
+    /* background-color: #05d9ff; */
+}
+
+.about > h2 {
+    color: #ffffff;
+}
+
+.about > h2 > #media {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about > p {
+    padding: 0 10px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    color: #ffffff;
+}
+
+.about > i {
+    padding: 0 10px;
+    font-family: 'Urbanist', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.about > i > a {
+    font-family: 'Urbanist', sans-serif;
+    color: #76eff8;
+    /* text-decoration: none; */
+}
+
+.about > i > a:hover {
+    color: #bff4f8;
+    text-decoration: none;
+}
+
+.about > a {
+    text-decoration: none;
+}
+
+.about > a > button {
+    height: 50px;
+    width: 50px;
+    margin: 2px 0px;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+    font-size: 20px;
+}
+
+.about > a > button:hover {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+}
+
+.about > span {
+    font-style: italic;
+    color: #818080;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        /* justify-content: center; */
+        display: none;
+    }
+
+    .aiub {
+        grid-template-columns: auto;
+    }
+    
+    .ahc {
+        grid-template-columns: auto;
+    }
+    
+    .ymca {
+        grid-template-columns: auto; 
+    }
+
+    .wall > img {
+        width: 100%; 
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content > p {
+        text-align: justify;
+    }
+
+    #academic > .journey {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0 10px;
+    }
+
+    .content > h3 > a {
+        font-size: 18px;
+    }
+
+    .skills {
+        width: 90%;
+        grid-template-columns: auto;
+    }
+
+    .code-skills {
+        padding-bottom: 30px;
+    }
+
+    .software-skills {
+        padding-bottom: 40px;
+    }
+
+    #liketodo {
+        height: auto;
+    }
+    
+    .interest {
+        grid-template-columns: auto;
+    }
+
+    .interest > div {
+        width: 80vw; 
+    }
+
+    .interest > div > p {
+        font-size: 18px;
+    }
+
+    .lines > a {
+        font-size: 15px;
+    }
+
+    .info {
+        display: block;
+        width: 90%;
+    }
+
+    .get-in-touch {
+        width: 90%;
+    }
+
+    .get-in-touch > #resume > button {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .map {
+        display: none;
+    }
+}
