@@ -813,7 +813,7 @@ meter::-webkit-meter-bar {
     color: #ffffff;
 }
 
-.about > h2 > #media {
+.about > h2 > a {
     text-decoration: none;
     color: #ffffff;
 }
